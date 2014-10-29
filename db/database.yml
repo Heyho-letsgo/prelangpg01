@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: prelangpg01
+  pool: 5
+  username: andrew
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: prelangpg01
+  pool: 5
+  username: andrew
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: mprelangpg01
+  pool: 5
+  username: andrew
+  password:
