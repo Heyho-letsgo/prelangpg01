@@ -1,23 +1,18 @@
-development:
+connection: &connection
   adapter: postgresql
   encoding: unicode
-  database: prelangpg01
   pool: 5
   username: andrew
   password: andrew
+
+development:
+  <<: *connection
+  database: prelangpg01_development
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: prelangpg01
-  pool: 5
-  username: andrew
-  password: andrew
+  <<: *connection
+  database: prelangpg01_test
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: mprelangpg01
-  pool: 5
-  username: andrew
-  password: andrew
+  <<: *connection
+  database: prelangpg01_production
